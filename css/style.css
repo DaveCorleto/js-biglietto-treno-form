@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 #calc-ticket {
@@ -8,7 +9,7 @@ body {
 }
 
 .calculator, #ticket {
-    background-color: red;
+    background-color: rgb(136, 14, 14);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -18,13 +19,33 @@ body {
     height: 200px;
     margin: 100px;
     box-sizing: border-box;
+    color: white;
 }
 
 .card > * {
     display: block;
     margin: auto;
+    text-align: center;
 } 
 
 .card > label {
     padding-bottom: 18px;
+}
+
+.sub-title {
+    margin: auto;
+    font-size: larger;
+    color: red;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+#price {
+    display: block;
+}
+.labels {
+    margin-bottom: 10px;
 }

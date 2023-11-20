@@ -62,13 +62,37 @@ else  {
 
 // const formattedPrice = `${Math.floor(price)} euro e ${(price % 1 * 100).toFixed(0)} centesimi`;
 
-const formattedPrice = `${Math.floor(price)} euro e ${(price % 1 * 100).toFixed(0)} centesimi`;
+const formattedPrice = `${Math.floor(price)} euro e ${(price % 1 * 100).toFixed(0)} cent`;
 
 
 
 console.log(price);
 
-document.getElementById("price").innerHTML = 'Il prezzo del tuo biglietto è: ' + formattedPrice;
+document.getElementById("price").innerHTML = formattedPrice;
+
+// Input del Name 
+
+const userName = (document.getElementById ("userNameInput").value);
+
+// Input del SurName 
+
+const userSurname = (document.getElementById ("userSurnameInput").value);
+
+// Stringa Nome Cognome 
+
+document.getElementById("guest").innerHTML = `$[userName]$[userSurname]`;
+
+// Carrozza numero...?!?
+
+let carriage = (Math.floor(Math.random() * 11)+1);
+
+document.getElementById("carrozza").innerHTML = carriage;
+
+// Classe Numero...? 
+
+let classe = (Math.floor(Math.random() * 4)+1);
+
+document.getElementById("classe").innerHTML = classe;
 
 }
  

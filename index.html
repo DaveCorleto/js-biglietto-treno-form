@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:opsz,wght@6..12,200&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Neon&family=VT323&family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +15,21 @@
 
         <section id="calc-ticket">
 
+            <div class="sub-title">
+                <h2>Inserisci i dati per il calcolo del tuo biglietto</h2>
+            </div>       
+
             <div class="calculator">
+                <div class="card">
+                    <label for="userName">Inserisci il tuo nome:</label>
+                    <input type="text" id="userNameInput" />
+                </div>               
+
+                <div class="card">
+                    <label for="userSurname">Inserisci il tuo cognome:</label>
+                    <input type="text" id="userSurnameInput" />
+                </div>
+
                 <div class="card">
                     <label for="kmInput">Inserisci i Km che devi percorrere:</label>
                     <input type="number" id="kmInput" />
@@ -27,7 +46,23 @@
         </section>
 
         <section id="ticket">
-            <p id="price">Il prezzo del tuo biglietto è: </p>
+            <div class="card">
+                <p class="labels">Questo è il biglietto di: </p>
+                <p id="guest"> </p>
+            </div>
+            <div class="card">
+                <p class="labels">Carrozza numero:</p>
+                <p id="carrozza"></p>
+            </div>
+            <div class="card">
+                <p class="labels">Classe: </p>
+                <p id="classe"> </p>
+            </div>
+            <div class="card">
+                <p class="labels">Il prezzo del tuo biglietto è:</p>
+                <p id="price"></p>
+            </div>
+
         </section>
 
 
