@@ -1,0 +1,30 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#calc-ticket {
+    
+}
+
+.calculator, #ticket {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+    margin: 100px;
+    box-sizing: border-box;
+}
+
+.card > * {
+    display: block;
+    margin: auto;
+} 
+
+.card > label {
+    padding-bottom: 18px;
+}
