@@ -72,15 +72,15 @@ document.getElementById("price").innerHTML = formattedPrice;
 
 // Input del Name 
 
-const userName = (document.getElementById ("userNameInput").value);
+let userName = (document.getElementById ("userNameInput").value);
 
 // Input del SurName 
 
-const userSurname = (document.getElementById ("userSurnameInput").value);
+let userSurname = (document.getElementById ("userSurnameInput").value);
 
 // Stringa Nome Cognome 
 
-document.getElementById("guest").innerHTML = `$[userName]$[userSurname]`;
+document.getElementById("guest").innerHTML = `${userName} ${userSurname}`;
 
 // Carrozza numero...?!?
 
@@ -96,5 +96,14 @@ document.getElementById("classe").innerHTML = classe;
 
 }
  
+
+
+document.addEventListener('mouseup', function () {
+
+    var selectedText = window.getSelection().toString();
+
+    if (selectedText.length > 0) {
+        alert('Hai selezionato del testo per truffare le Ferrovie dello Stato?!? ' + "Attenzione! Provare a stampare il biglietto è un reato punibile con una torta in faccia!"); }
+})
 
 

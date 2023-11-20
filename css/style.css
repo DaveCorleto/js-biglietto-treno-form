@@ -2,10 +2,18 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-image: url(../img/R.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#calc-ticket {
-    
+.sub-title {
+    width: 50%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.479);
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .calculator, #ticket {
@@ -41,6 +49,8 @@ body {
 
 h2 {
     text-align: center;
+    margin: auto;
+    color: white;
 }
 
 #price {
